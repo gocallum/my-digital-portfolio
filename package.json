@@ -6,7 +6,9 @@
     "dev": "next dev --turbo",
     "build": "next build --turbo",
     "start": "next start",
-    "lint": "eslint app components lib hooks --ignore-pattern node_modules/"
+    "lint": "eslint app components lib hooks --ignore-pattern node_modules/",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg"
   },
   "dependencies": {
     "@aws-sdk/client-rds-data": "latest",
@@ -62,7 +64,6 @@
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
     "dotenv": "latest",
-    "drizzle-kit": "latest",
     "drizzle-zod": "^0.7.1",
     "embla-carousel-react": "8.5.1",
     "expo-sqlite": "latest",
@@ -93,6 +94,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "latest",
     "drizzle-orm": "^0.43.1",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.3.1",
